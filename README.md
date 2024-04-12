@@ -7,7 +7,7 @@ that asynchronously processes two files and returns two statements. Execute the 
   - modify the retrieved latin letters `utility.modifyString(String s)`
   - enrich modified string `utility.enrichString(String s)`
   - combine the processed result of the two files `utility.combineTwoStrings(String x, String y)`
-  - in case an exception occurs, return `exception.getMessage()`
+  - in case an exception occurs, return `exception.getMessage()`. Adjust computeFilesException() with the error message.
 
 A plus would be to run `combineTwoString` in a separate thread-pool.
   

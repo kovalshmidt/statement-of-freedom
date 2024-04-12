@@ -34,7 +34,7 @@ public class AsyncComputationTest {
         AsyncComputation asyncComputation = new AsyncComputation(utility);
 
         String result = asyncComputation.computeFiles(fileName1, "wrongFile.txt");
-        String expected = "java.lang.RuntimeException: Stay Strong!";
+        String expected = "Stay Strong!";
 
         assertEquals(result, expected);
     }

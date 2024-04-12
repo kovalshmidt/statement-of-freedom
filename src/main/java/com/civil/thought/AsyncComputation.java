@@ -5,8 +5,6 @@
 
 package com.civil.thought;
 
-import java.util.concurrent.CompletableFuture;
-
 public class AsyncComputation {
 
     private Utility utility;
@@ -27,7 +25,7 @@ public class AsyncComputation {
                - utility.enrichString(String s)
            - combines the processed result of the two files
                - utility.combineTwoStrings(String x, String y)
-           - in case an exception occurs, returns exception.getMessage()
+           - in case an exception occurs, return new RuntimeException("Stay Strong!").getMessage()
            - return computation result value when complete by calling .join()
      */
     public String computeFiles(String fileName1, String fileName2) {
